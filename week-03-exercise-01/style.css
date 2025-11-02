@@ -16,7 +16,7 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 10px;
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 1000px;
 }
 
 .card h1 {
@@ -26,7 +26,7 @@ body {
 }
 
 .card p {
-    font-size: 5em;
+    font-size: 1.5em;
     margin: 10px 0;
     color: #0b0b0bee;
 }
