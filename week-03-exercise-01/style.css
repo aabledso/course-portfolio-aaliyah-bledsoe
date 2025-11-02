@@ -11,9 +11,9 @@ body {
 
 .card {
     background-color: rgb(241, 85, 160);
-    border: 1px solid #2b2427;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #f7f5f6;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(24, 20, 20, 0.408);
     padding: 10px;
     margin: 0 auto;
     max-width: 1000px;
