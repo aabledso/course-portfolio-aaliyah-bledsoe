@@ -51,11 +51,11 @@ p {
     border: 1px solid rgba(0, 0, 0, 1);
     text-align: center;
     height: 400px;
-    overflow: auto;
+    overflow: hidden;
 }
 
 .screenshot-container img {
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
     display: block;
     margin: 0 auto;
