@@ -6,6 +6,9 @@ html,
 body {
     min-height: 100vh;
     margin: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #15e53f;
+    background: linear-gradient(to bottom, #000 0%, #2f2e2e 100%);
 }
 
 body {
@@ -15,13 +18,15 @@ body {
     justify-content: center;
     align-items: flex-start;
     padding: 32px 0;
+    background-color: #121212;
+    color: #ffffff;
 }
 
 main {
     max-width: 1200px;
     width: 90%;
     padding: 16px;
-    border: 1px solid rgba(0, 0, 0, 0.25);
+    border: none;
 }
 
 h1 {
@@ -39,6 +44,7 @@ main>p {
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
+    font-size: 24px;
 }
 
 .collection-grid {
@@ -50,11 +56,14 @@ main>p {
 }
 
 .collection-card {
-    border: 5px solid rgba(0, 0, 0, 0.952);
-    background-color: #fafafa;
+    border: none;
+    background-color: #1e1e1e;
     padding: 16px;
     flex: 1 1 300px;
     max-width: 300px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 14px;
+    position: relative;
 }
 
 .collection-card img {
@@ -64,6 +73,18 @@ main>p {
     display: block;
     border: 1px solid rgba(0, 0, 0, 0.25);
     margin-bottom: 16px;
+    border-radius: 12px;
+}
+
+.collection-card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 0 20px rgba(117, 192, 48, 0.3)
+}
+
+.collection-card:hover .play-button {
+    opacity: 1;
+    transform: scale(1);
 }
 
 .collection-card h2 {
@@ -72,11 +93,12 @@ main>p {
     margin-top: 0;
     margin-bottom: 8px;
     line-height: 1.2;
+    color: #1ddb60
 }
 
 .collection-card .details {
     font-size: 14px;
-    color: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
     margin-bottom: 16px;
     font-style: italic;
 }
@@ -85,6 +107,31 @@ main>p {
     font-size: 16px;
     margin-bottom: 0;
     line-height: 1.6;
+}
+
+.play-button {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    height: 50px;
+    width: 50px;
+    background-color: #15e53f;
+    border-radius: 50%;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.play-button i {
+    border-style: solid;
+    border-width: 7.5px 0 7.5px 15px;
+    border-color: transparent transparent transparent #ffffff;
+    margin-left: 3px;
 }
 
 @media (width >=480px) {
