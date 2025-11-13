@@ -53,6 +53,7 @@ main>p {
     gap: 24px;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 40px;
 }
 
 .collection-card {
