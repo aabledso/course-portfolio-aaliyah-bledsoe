@@ -86,22 +86,24 @@ code {
 }
 
 .nav-simple li {
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
 .nav-simple a {
   display: block;
   padding: 8px 16px;
-  color: #0066CC;
+  color: #5b5d5f;
   text-decoration: none;
-  background-color: #fafafa;
-  border: 1px solid rgba(0, 0, 0, 0.25);
-  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: #dadbeb;
+  border: 5px solid rgba(19, 18, 18, 0.71);
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
 .nav-simple a:hover {
-  background-color: #0066CC;
-  color: #ffffff;
+  background-color: #83cbe6;
+  color: #090000;
+  transform: translateX(-4px);
 }
 
 .nav-simple+main {
@@ -113,9 +115,9 @@ code {
   top: 0;
   left: 0;
   right: 0;
-  background-color: #333333;
-  padding: 0 32px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #0a0101;
+  padding: 12px 32px;
+  box-shadow: 0 2px 4px rgb(250, 248, 248);
   z-index: 1000;
 }
 
@@ -124,7 +126,8 @@ code {
   margin: 0;
   padding: 0;
   display: flex;
-  gap: 32px;
+  justify-content: flex-end;
+  gap: 40px;
 }
 
 .nav-horizontal li {
@@ -132,30 +135,62 @@ code {
 }
 
 .nav-horizontal a {
-  display: block;
-  padding: 16px 0;
-  color: #ffffff;
+  padding: 6px 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #08e468;
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .nav-horizontal a:hover {
-  color: #0066CC;
+  color: #f7fcfd;
+  background-color: rgba(0, 0, 0, 0.25);
+  transform: translateY(-4px);
 }
 
 .nav-horizontal+main {
   margin-top: 80px;
 }
 
-.nav-custom {}
+.nav-custom {
+  position: fixed;
+  margin-bottom: 80px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  padding: 10px 0;
+}
 
-.nav-custom ul {}
+.nav-custom ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 50px;
 
-.nav-custom li {}
+}
 
-.nav-custom a {}
+.nav-custom li {
+  text-decoration: none;
+  font-size: 18px;
+}
 
-.nav-custom a:hover {}
+.nav-custom a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 8px 16px;
+  transition: all ease 0.3s;
+}
+
+.nav-custom a:hover {
+  background-color: rgba(85, 186, 223, 0.237);
+  color: rgb(61, 211, 216);
+  border-radius: 8px;
+}
 
 @media (width >=480px) {}
 
